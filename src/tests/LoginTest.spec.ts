@@ -17,6 +17,7 @@ test(`${data1.TestID} - ${data1.Description}`, async () => {
     await home.login(data1.UserName, data1.Password);
     await home.validateLogin(data1.UserName);
     await home.logout();
+    console.log("test completed")
 });
 
 const data2 = ExcelUtil.getTestData(SHEET, "TC02_InValidLogin");
