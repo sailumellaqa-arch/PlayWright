@@ -14,7 +14,7 @@ const data1 = ExcelUtil.getTestData(SHEET, "TC01_ValidLogin");
 test(`${data1.TestID} - ${data1.Description}`, async () => {
     Allure.attachDetails(data1.Description, data1.Issue);
     await home.launchApplication();
-    await home.login(data1.UserName, data1.Password);
+    await home.login(data1.UserName, "password";
     await home.validateLogin(data1.UserName);
     await home.logout();
     console.log("test completed")
